@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/tenzie-dice-game/static/css/main.26cc4bc4.css",
+    "main.js": "/tenzie-dice-game/static/js/main.0f02de5c.js",
+    "static/media/audio.mp3": "/tenzie-dice-game/static/media/audio.fd010efecbcee6e3627b.mp3",
+    "index.html": "/tenzie-dice-game/index.html",
+    "main.26cc4bc4.css.map": "/tenzie-dice-game/static/css/main.26cc4bc4.css.map",
+    "main.0f02de5c.js.map": "/tenzie-dice-game/static/js/main.0f02de5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26cc4bc4.css",
+    "static/js/main.0f02de5c.js"
+  ]
+}
