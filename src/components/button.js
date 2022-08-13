@@ -9,7 +9,7 @@ export default function Button(props) {
         whileTap={{ scale: 0.9, x: "-5px", y: "5px" }} 
         className="roll-dice" 
         onClick={props.rollDice}>{
-            !(props.tenzies) ? "Roll" : "New Game"}
+            !(props.tenzies) ? "Roll 🎲" : "New Game 🎉"}
         </motion.button>
     )
 }

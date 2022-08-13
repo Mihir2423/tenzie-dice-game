@@ -26,6 +26,7 @@ export default function App() {
     isHeld={die.isHeld}
     holdDice={() => holdDice(die.id)} />)
 
+    // Generating New Dice 
   function generateNewDice() {
     return {
       value: Math.floor(Math.random() * 6 + 1),
@@ -40,6 +41,7 @@ export default function App() {
     }
     return arr
   }
+  // To roll dice 
   function rollDice() {
     if (!tenzies) {
       setDice(oldDice => oldDice.map(die => {
@@ -58,11 +60,13 @@ export default function App() {
       setCount(0)
     }
   }
+  // To hold the selected dice 
   function holdDice(id) {
     setDice(oldDice => oldDice.map(die => {
       return die.id === id ? { ...die, isHeld: !die.isHeld } : die
     }))
   }
+  // Preloader
   const [loading, setLoading] = React.useState(false)
   React.useEffect(() => {
     setLoading(true)
@@ -71,6 +75,7 @@ export default function App() {
     }, 2000);
   }, [])
 
+  // Count & Score 
   const [count, setCount] = React.useState(0)
   const [score, setScore] = React.useState(JSON.parse(localStorage.getItem("score")) || 0)
 
